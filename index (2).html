@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>E-Portofolio Refleksi PPG Teknik Mesin | Decka Ridho Ariraya</title>
+<meta name="description" content="E-portofolio refleksi Semester 1 dan 2 Pendidikan Profesi Guru Teknik Mesin, Universitas Negeri Malang, lengkap dengan artefak pembelajaran.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6FF;--ink:#171A3A;--mut:#575B82;--card:#fff;--line:#DDE0F5;--c:#A58BFF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101230;--ink:#F0F1FF;--mut:#A9AEDC;--card:#1A1D45;--line:#2C3068;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101230;--ink:#F0F1FF;--mut:#A9AEDC;--card:#1A1D45;--line:#2C3068;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:auto}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.1;margin:0}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header.w{padding-top:44px}
+.me{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.mono{width:52px;height:52px;border-radius:50%;background:#FFC531;color:#171A3A;display:grid;place-items:center;font:800 1.2rem "Bricolage Grotesque",sans-serif;flex:none;animation:spin 14s linear infinite}
+.mono span{display:block;animation:spin 14s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.me p{margin:0;line-height:1.35}.me small{color:var(--mut)}
+h1{font-size:clamp(2.3rem,7vw,4.6rem);font-weight:800;letter-spacing:-.02em;max-width:15ch}
+.lead{max-width:56ch;color:var(--mut);margin:18px 0 30px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(172px,1fr));gap:14px}
+.tile{--r:22px;font:inherit;text-align:left;border:3px solid transparent;border-radius:var(--r);background:var(--c);color:#14163A;padding:18px;cursor:pointer;display:flex;flex-direction:column;gap:8px;min-height:190px;animation:pop .55s cubic-bezier(.3,1.5,.5,1) backwards;animation-delay:calc(var(--i)*80ms);transition:transform .2s}
+.tile:nth-child(even){--r:22px 22px 22px 4px}
+.tile:hover{transform:translateY(-5px) rotate(-1deg)}
+.tile[aria-pressed=true]{border-color:var(--ink);transform:translateY(-5px)}
+.tile .em{font-size:2rem;line-height:1}
+.tile b{font:700 1.08rem/1.2 "Bricolage Grotesque",sans-serif}
+.tile small{font-size:.92rem;line-height:1.35;margin-top:auto}
+@keyframes pop{from{opacity:0;transform:translateY(30px) scale(.9)}}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+section{padding:56px 0 0}
+.panel{background:var(--card);border:2px solid var(--line);border-radius:26px;overflow:hidden}
+.ph{background:var(--c);color:#14163A;padding:26px 26px 22px}
+.ph h2{font-size:clamp(1.6rem,4.5vw,2.5rem)}
+.ph p{margin:8px 0 0;font-weight:600}
+.tabs{display:flex;gap:8px;padding:16px 20px 0;flex-wrap:wrap}
+.tabs button,.btn,.opt,.nx{font:600 1rem Figtree,sans-serif;border:2px solid var(--ink);color:var(--ink);background:transparent;border-radius:99px;padding:9px 20px;cursor:pointer;text-decoration:none;display:inline-block}
+.tabs button[aria-selected=true],.btn,.nx{background:var(--c);color:#14163A}
+.pb{padding:20px 26px 30px;display:grid;gap:22px}
+.pb h3{font-size:1.2rem;margin-bottom:6px}
+.pb p{margin:0;max-width:68ch}
+.pb ul{margin:0;padding-left:1.2em;max-width:68ch}.pb li{margin:4px 0}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.art{border-left:6px solid var(--c);padding:2px 0 2px 16px}
+.art .k{display:inline-block;background:var(--c);color:#14163A;font-weight:600;border-radius:8px;padding:0 9px;margin-right:6px}
+.why{background:var(--bg);border-radius:16px;padding:14px 18px}
+.flow{counter-reset:s;list-style:none;padding:0!important;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;max-width:none!important}
+.flow li{counter-increment:s;background:var(--bg);border-radius:16px;padding:14px;font-size:.95rem;line-height:1.4}
+.flow li::before{content:counter(s);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--c);color:#14163A;font-weight:600;margin-bottom:8px}
+.flow b{display:block}
+.chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.chip{background:var(--bg);border-radius:16px;padding:14px;font-size:.95rem;line-height:1.4}
+.chip b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem}
+.q{font:700 1.25rem/1.35 "Bricolage Grotesque",sans-serif;border-left:6px solid var(--c);padding-left:16px;margin:0}
+.game{background:#FFC531;color:#171A3A;border-radius:26px;padding:30px 26px;--c:#fff}
+.game h2{font-size:clamp(1.6rem,4.5vw,2.4rem)}
+.game p{max-width:60ch}
+.card{background:#fff;border-radius:20px;padding:22px;margin-top:18px}
+.card .s{font:700 1.2rem/1.4 "Bricolage Grotesque",sans-serif;margin:0 0 16px}
+.opts{display:flex;gap:10px;flex-wrap:wrap}
+.opt{background:#fff;color:#171A3A;border-color:#171A3A}
+.opt:disabled{opacity:.55;cursor:default}.opt.ok{background:#14B87F;border-color:#14B87F;opacity:1}.opt.no{background:#FF8FAE;border-color:#FF8FAE;opacity:1}
+.fb{margin:14px 0 0;min-height:1.6em}
+.nx{margin-top:14px;background:#171A3A;color:#fff}
+.vow{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.vow label{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:14px 18px;cursor:pointer}
+.vow input{width:22px;height:22px;margin-top:3px;accent-color:#14B87F;flex:none}
+.vow input:checked+span{text-decoration:line-through;color:var(--mut)}
+.vow b{display:block;font-family:"Bricolage Grotesque",sans-serif}
+#cnt{font-weight:600}
+footer{padding:60px 0 40px;color:var(--mut);font-size:.95rem}
+footer p{margin:2px 0}
+h2.s2{font-size:clamp(1.6rem,4.5vw,2.4rem)}
+[hidden]{display:none!important}
+.sem{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}
+.sem button{font:700 1.05rem "Bricolage Grotesque",sans-serif;border:3px solid var(--ink);color:var(--ink);background:transparent;border-radius:99px;padding:10px 26px;cursor:pointer}
+.sem button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.moods{display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:10px}
+.mood{font:inherit;font-size:2rem;line-height:1;background:#fff;border:3px solid #171A3A;border-radius:18px;padding:12px 0;cursor:pointer;color:#171A3A}
+.mood small{display:block;font:600 .82rem Figtree,sans-serif;margin-top:6px}
+.mood[aria-pressed=true]{background:#171A3A;color:#fff}
+.note{background:var(--bg);border-radius:16px;padding:14px 18px;color:var(--mut)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="w">
+  <div class="me">
+    <div class="mono" aria-hidden="true"><span>DR</span></div>
+    <p><b>Decka Ridho Ariraya</b><br><small>PPG Teknik Mesin, Universitas Negeri Malang</small></p>
+  </div>
+  <h1>Dulu instruktur bubut, sekarang belajar menjadi guru.</h1>
+  <p class="lead">Ini e-portofolio refleksi saya selama PPG. Pilih semester, lalu pilih kartu mata kuliah untuk membaca refleksi dan artefak yang menjadi buktinya.</p>
+  <div class="sem" id="sem"><button data-s="0" aria-pressed="true">Semester 1</button><button data-s="1" aria-pressed="false">Semester 2</button></div>
+  <div class="tiles" id="tiles"></div>
+</header>
+
+<main class="w">
+  <section id="detail" aria-live="polite"><div class="panel" id="panel"></div></section>
+
+  <section id="mood" hidden>
+    <div class="game" style="background:#FF8FAE">
+      <h2>Check-in emosi di kelas saya</h2>
+      <p>Salah satu perubahan yang saya rencanakan dari Pembelajaran Sosial Emosional: membuka pelajaran dengan check-in 3–5 menit. Pilih suasana hatimu hari ini, lalu lihat apa yang akan saya lakukan sebagai guru.</p>
+      <div class="card"><div class="moods" id="moods"></div><p class="fb" id="mfb" aria-live="polite">Pilih salah satu.</p></div>
+    </div>
+  </section>
+  <section id="game">
+    <div class="game">
+      <h2>Tebak pola pikirnya</h2>
+      <p>Dari artefak LK 2.3 saya: apakah kalimat guru ini termasuk Constraint-Based Thinking (CBT, melihat hambatan) atau Opportunity-Based Thinking (OBT, melihat peluang)?</p>
+      <div class="card" id="gcard"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="s2">Janji saya untuk kelas</h2>
+    <p style="color:var(--mut);max-width:60ch">Satu janji dari setiap mata kuliah. Centang kalau sudah mulai saya praktikkan.</p>
+    <ul class="vow" id="vow"></ul>
+    <p id="cnt"></p>
+  </section>
+</main>
+
+<footer class="w">
+  <p><b>Decka Ridho Ariraya</b>, NIM 253151743957</p>
+  <p>Pendidikan Profesi Guru Teknik Mesin, Sekolah Pascasarjana</p>
+  <p>Universitas Negeri Malang, Semester 1 dan 2 Tahun 2026</p>
+</footer>
+
+<script>
+var S1=[
+{n:"Filosofi Pendidikan dan Pendidikan Nilai",e:"🧭",c:"#A58BFF",tag:"Dari mengajar menjadi menuntun.",
+ a:"Mata kuliah ini memberi landasan tentang hakikat mendidik, bukan sekadar mengajarkan keterampilan teknis. Sebagai calon guru Teknik Mesin, saya diajak menuntun siswa sesuai kodratnya dan menjadi teladan lewat Ing Ngarso Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani.",
+ b:"Pergeseran paradigma dari “mengajar” ke “menuntun” ala Ki Hajar Dewantara. Selama ini saya menekankan kompetensi teknis dan standar industri, padahal kejujuran, disiplin, dan tanggung jawab perlu ditanamkan secara sadar.",
+ k:["Menuntun tumbuh kembang anak sesuai kodrat alam dan kodrat zaman","Tiga semboyan Ki Hajar Dewantara sebagai sikap guru","Aliran filsafat pendidikan: esensialisme, progresivisme, perenialisme, rekonstruksionisme","Pendidikan nilai bukan pelengkap kompetensi teknis"],
+ u:["Mengubah transfer keterampilan menjadi proses menuntun yang menghargai keberagaman siswa","Menyisipkan kejujuran, disiplin K3, dan tanggung jawab alat di setiap praktik bengkel","Menjadi teladan, bukan sekadar instruktur teknis"],
+ art:[["2.A","Belajar dari Kisah Sokola Rimba","Pendidikan sejati adalah pemberdayaan berbasis identitas dan realitas peserta didik. Literasi menjadi “perisai” untuk menjaga tanah ulayat, bukan alasan meninggalkan adat."],["3.A","Memahami Kondisi Bangsa Indonesia","Menghubungkan filosofi dengan krisis moral pendidikan, lalu merumuskan peran guru lewat keteladanan (bagian “Guru adalah Cermin”)."]],
+ w:"Kedua artefak saling melengkapi. 2.A menjadi fondasi teori tentang esensi pendidikan, 3.A menjadi bukti kesadaran kontekstual dan aksi nyata saya.",x:"",
+ v:"Menyisipkan kejujuran, disiplin K3, dan tanggung jawab alat di setiap praktik bengkel."},
+{n:"Inovasi Kejuruan",e:"💡",c:"#FFA45C",tag:"Job sheet biasa jadi footstep motor.",
+ a:"Di SMK Negeri 6 Malang banyak murid menyukai otomotif, sementara job sheet bubut berisi poros bertingkat dan baut yang terasa jauh dari keseharian mereka. Guru kejuruan perlu merancang pembelajaran yang dekat dengan minat murid dan kebutuhan industri.",
+ b:"Biasanya murid mengikuti job sheet standar, dinilai dari ukuran akhir, lalu benda kerjanya jadi sisa latihan. Kuliah menawarkan PjBL: mulai dari masalah nyata milik murid, uji pasang di kendaraan, lalu pameran. Murid ikut mengambil keputusan dan penilaian.",
+ k:["Relevansi kontekstual menumbuhkan penghargaan intrinsik: belajar demi fungsi, bukan demi nilai","Model kreatif-inovatif berbasis proyek dalam lima tahap","Inovasi tidak mengurangi kompetensi dasar: pemakanan rata, ulir, dan bor senter tetap dikerjakan","Guru sebagai fasilitator kreativitas"],
+ u:["Mengganti sebagian job sheet standar dengan proyek komponen kendaraan","Lebih banyak bertanya dan mengarahkan daripada memberi instruksi","Menyusun rubrik bersama murid dan mengadakan expo kecil di sekolah"],
+ art:[["4.C","Eksplorasi Kolaboratif Menuju Aksi Kreatif","Laporan studi kasus “Implementasi Model Pembelajaran Kreatif-Inovatif di SMK Negeri 6 Malang dengan Memanfaatkan Kendaraan Bermotor”, hasil pengamatan 31 Maret sampai 13 Mei."]],
+ w:"Isinya kejadian nyata di bengkel bubut saya. Bagian hasil pengamatan, analisis, tabel rencana lima tahap, dan refleksi pribadi menjawab keempat pertanyaan refleksi sekaligus.",
+ x:"<div><h3>Lima tahap model yang saya rancang</h3><ol class='flow'><li><b>Identifikasi masalah</b>Murid membawa komponen motor yang rusak atau ingin dimodifikasi.</li><li><b>Desain kreatif</b>Gambar kerja manual atau CAD dengan modifikasi fungsional.</li><li><b>Eksekusi di bengkel</b>Membubut dengan pengawasan K3 dan toleransi ukuran.</li><li><b>Uji fungsi</b>Komponen langsung diuji pasang pada kendaraan.</li><li><b>Pameran karya</b>“Expo Teknik Mesin” internal.</li></ol></div><p class='q'>Ada kepuasan profesional yang luar biasa saat melihat binar mata murid ketika as roda yang mereka bubut sendiri terpasang sempurna di motornya.</p>",
+ v:"Mengganti sebagian job sheet dengan proyek komponen kendaraan dan menggelar expo kecil."},
+{n:"Pemahaman tentang Peserta Didik dan Pembelajaran",e:"🧩",c:"#FF8FAE",tag:"Satu kelas, empat cara belajar.",
+ a:"Mata kuliah ini membantu saya memahami cara berpikir, emosi, moral, dan fisik siswa, serta perbedaan bakat, minat, dan latar belakang. Lewat pembelajaran mikro dan PPL Terbimbing, saya langsung mencoba merancang, mengajar, dan mengevaluasi.",
+ b:"Praktik saya cenderung fokus pada penyampaian materi dan hasil kerja, dengan metode yang sama untuk semua siswa dan evaluasi hanya pada produk akhir. Kini saya sadar tahap perkembangan, minat, dan proses belajar perlu dipertimbangkan sejak perencanaan.",
+ k:["Perkembangan kognitif, sosial-emosional, moral, dan fisik","Keberagaman bakat, minat, dan latar budaya","Pembelajaran konstruktif dan humanistik","Pembelajaran berdiferensiasi sesuai kesiapan dan kebutuhan","Perencanaan, pelaksanaan, dan evaluasi sebagai satu rangkaian"],
+ u:["Memperhatikan kondisi kognitif dan emosional siswa sebelum menyusun rencana","Menerapkan diferensiasi di kelas dan bengkel praktik","Menilai proses belajar, bukan hanya produk akhir","Lebih peka pada latar sosial dan budaya siswa"],
+ art:[["1.C","Diskusi Pemecahan Masalah","Kasus kelas Pak Toni (siklus air): kebutuhan empat murid, strategi “stasiun aktivitas”, dan keterkaitannya dengan teori Piaget, Vygotsky, Erikson, dan Kohlberg."],["3.C","Diskusi Penyelesaian Kasus","Kasus kelas Bu Sinta: tabel yang menghubungkan fakta masalah dengan teori belajar, konsep kunci, dan strategi awal."]],
+ w:"Stasiun aktivitas dan pilihan produk asesmen di 1.C membuktikan saya menerapkan perbedaan gaya belajar. Tabel 3.C menunjukkan cara berpikir saya bergeser: mendiagnosis akar masalah dulu, baru bertindak.",
+ x:"<div><h3>Empat murid, empat strategi (1.C)</h3><div class='chips'><div class='chip'><b>Nina</b>Logis-matematis. Mencatat dan mengukur data eksperimen, produknya laporan atau diagram teknis.</div><div class='chip'><b>Adi</b>Interpersonal. Menjadi koordinator kelompok, produknya presentasi atau wawancara.</div><div class='chip'><b>Mario</b>Kinestetik. Memegang alat dan memanipulasi percobaan, produknya demonstrasi langsung.</div><div class='chip'><b>Laksmi</b>Visual dan imajinatif. Menggambar atau bercerita, produknya komik atau storyboard.</div></div></div><div><h3>Fakta masalah dan teorinya (3.C)</h3><ul><li>Murid mencontek karena bingung: Vygotsky, dengan modeling dan scaffolding</li><li>Murid mengantuk saat ceramah: Piaget, dengan diskusi aktif</li><li>Proyek berakhir copy-paste: Dewey dan Piaget, dengan proyek dipecah jadi langkah kecil</li><li>Murid tegang saat dipanggil acak: Maslow dan Rogers, dengan kelas yang aman secara psikologis</li><li>Murid kompak menjawab “paham” tapi gagal: Ausubel, dengan materi dikaitkan ke kehidupan nyata</li><li>Murid pasif menunggu instruksi: belajar mandiri, dengan ruang memilih tugas</li></ul></div>",
+ v:"Menilai proses belajar, bukan hanya produk akhir, dengan tugas yang divariasikan."},
+{n:"Pembelajaran Mendalam dan Asesmen Dasar SMK",e:"🎯",c:"#7AA2FF",tag:"Tujuan dulu, baru kegiatan dan penilaian.",
+ a:"Guru perlu merancang pembelajaran yang membuat murid benar-benar paham, lalu menilai sesuai tujuan: apa yang dinilai, kapan, dengan alat apa, dan bagaimana hasilnya membantu murid yang masih kesulitan.",
+ b:"Dulu saya menilai dari hasil akhir saja, dengan tugas sama untuk semua dan sedikit umpan balik. Kuliah membedakan asesmen formatif dan sumatif, menyiapkan instrumen lebih dulu, melibatkan murid lewat penilaian diri, dan merancang dari tujuan pembelajaran.",
+ k:["Pembelajaran mendalam: berkesadaran, bermakna, dan menggembirakan","Asesmen formatif memantau proses, sumatif menilai capaian akhir","Penilaian selaras dengan tujuan dan kompetensi","Lembar observasi dan rubrik membuat penilaian jelas dan konsisten","Hasil asesmen menjadi umpan balik bagi murid dan bahan perbaikan bagi guru"],
+ u:["Menulis tujuan pembelajaran dan cara menilainya sebelum menyusun kegiatan","Membagikan rubrik kepada murid sejak awal","Memberi umpan balik selama proses dan meminta penilaian diri di akhir pertemuan"],
+ art:[["4.D","Modul Ajar Perencanaan Pembelajaran (DUP)","Kelas XI Teknik Pemesinan Bubut, topik pembubutan alur dan muka, 5 JP, model PjBL. Memuat rancangan asesmen formatif dan sumatif beserta rubriknya."]],
+ w:"Rancangan pembelajaran dan asesmen ada dalam satu dokumen: CP dan TP, tiga tahap kegiatan, tabel asesmen, dan lampiran rubrik berkriteria dan berskor.",
+ x:"<div><h3>Tiga job sheet sesuai kesiapan murid</h3><div class='chips'><div class='chip'><b>Job sheet A</b>Fokus pada facing yang presisi.</div><div class='chip'><b>Job sheet B</b>Fokus pada variasi alur.</div><div class='chip'><b>Job sheet C</b>Fokus pada alur bertingkat.</div></div></div><div><h3>Penilaian selama proses</h3><ul><li>Formatif: lembar observasi K3 dengan 6 kriteria (APD, mesin, SOP, lingkungan, alat, sikap)</li><li>Sumatif: produk sesuai job sheet</li><li>Penilaian diri lewat wawancara, presentasi, atau laporan, masing-masing dengan rubrik</li></ul></div>",
+ v:"Menulis tujuan dan rubrik lebih dulu, lalu membagikannya kepada murid."},
+{n:"Pola Pikir Bertumbuh (Growth Mindset) dalam Pembelajaran",e:"🌱",c:"#4BDDA6",tag:"Kesulitan adalah bahan bakar.",
+ a:"Membangun growth mindset pada diri sendiri dan siswa membuat pembelajaran mendorong siswa berani mencoba, tidak mudah menyerah, dan terus mengembangkan kemampuan.",
+ b:"Selama ini saya lebih sering berfokus pada pencapaian hasil. Materi ini menekankan apresiasi terhadap proses dan usaha siswa, supaya mereka berani belajar dari kesalahan.",
+ k:["Kemampuan dapat berkembang lewat usaha dan proses belajar","Umpan balik yang membuat siswa tidak takut gagal","Constraint-Based Thinking (CBT) berbeda dengan Opportunity-Based Thinking (OBT)"],
+ u:["Konsisten mengapresiasi proses dan usaha siswa","Mendorong siswa menghadapi kesulitan","Menjadikan kesalahan bagian dari proses belajar"],
+ art:[["LK 2.3","Cara Otak Melihat Tantangan","Tabel 10 situasi pembelajaran yang saya bedakan sebagai CBT atau OBT, lengkap dengan alasannya."]],
+ w:"Contoh seperti “kesulitan ini bisa jadi peluang untuk menemukan cara baru” dan memakai masukan untuk memperbaiki program menunjukkan pemahaman saya tentang melihat kesulitan sebagai peluang.",
+ x:"<p><a class='btn' href='#game'>Coba tebak CBT atau OBT</a></p>",
+ v:"Mengapresiasi usaha siswa dan menjadikan kesalahan bagian dari belajar."}
+];
+var S2=[
+{n:"Projek Kepemimpinan",e:"🚀",c:"#FFD25E",tag:"Memimpin dimulai dari mendengarkan.",
+ a:"Saya semula mengira kepemimpinan hanya soal memimpin kelas. Lewat proyek “Smart Community Movement” bersama PKK Kelurahan Lesanpuro, tim saya memimpin perubahan kebiasaan 16 pengurus PKK dalam memakai AI untuk mendampingi belajar anak di rumah. Saya belajar bahwa guru juga perlu menggerakkan pihak lain, misalnya orang tua.",
+ b:"Dulu saya langsung menyiapkan materi. Sebagai penanggung jawab identifikasi masalah dan observasi, saya belajar bahwa materi baru disusun setelah mendengarkan kebutuhan mitra. Pelatihan satu hari juga tidak cukup: perlu pendampingan berkelanjutan dan keputusan berbasis data.",
+ k:["Kepemimpinan transformasional (Bass dan Riggio): pengaruh ideal, motivasi inspirasional, stimulasi intelektual, pertimbangan individual","Kepemimpinan melayani (Greenleaf)","Pembelajaran orang dewasa (Knowles) dan deep learning","Evaluasi pelatihan Kirkpatrick dan refleksi What? So What? Now What? (Rolfe)","Literasi digital dan etika AI: privasi, keakuratan, risiko ketergantungan"],
+ u:["Membiasakan observasi dan wawancara singkat sebelum merancang pembelajaran","Menjadi teladan, termasuk mengakui dan memperbaiki kesalahan secara terbuka","Membangun kemitraan dengan orang tua lewat komunikasi terbuka dan grup pesan","Merancang pretest dan posttest sejak awal, lalu memakai hasilnya untuk memperbaiki pembelajaran","Rutin menulis refleksi selama proses berjalan"],
+ art:[["4.1.c","Laporan Akhir Proyek Kepemimpinan PPG","“Smart Community Movement”: pelatihan AI untuk pengurus PKK Kelurahan Lesanpuro oleh Kelompok 1 (7 anggota), 6 sampai 7 Juli 2026, dibimbing Ir. Marsono, S.Pd.T., M.Pd., Ph.D. Peran saya: penanggung jawab identifikasi masalah dan observasi."]],
+ w:"Laporan memuat seluruh proses kepemimpinan dengan data terukur. Bab V berisi refleksi What? So What? Now What? dan dinamika tim (jadwal bentrok, modul terlambat) yang mendasari rencana perubahan saya.",
+ x:"<div><h3>Dampak yang terukur</h3><div class='chips'><div class='chip'><b>62,63 menjadi 89,56</b>Skor rata-rata pretest ke posttest.</div><div class='chip'><b>14 dari 16 peserta</b>memakai AI untuk mendampingi anak.</div><div class='chip'><b>4,6 dari 5</b>Kepuasan peserta pelatihan.</div></div></div>",
+ v:"Observasi dan wawancara dulu sebelum merancang, lalu ukur hasilnya dengan pretest dan posttest."},
+{n:"Etika dan Profesionalisme Guru",e:"⚖️",c:"#7AA2FF",tag:"Menguasai materi belum cukup, harus bisa menjembatani.",
+ a:"Dalam praktik pembubutan, saya harus menguasai materi sekaligus mengemasnya untuk murid kelas XI yang kemampuan awalnya beragam. Profesionalisme guru ditentukan oleh keterpaduan kompetensi profesional dan pedagogik, serta sikap yang berpihak pada murid. Kasus Pak Andi menjadi cermin bagi saya.",
+ b:"Dulu saya mengira guru yang baik langsung memakai istilah tepat, misalnya kecepatan potong dan gerak makan beserta rumusnya. Kini saya tahu konten harus diolah dulu lewat PCK: analogi, contoh kontekstual, dan ilustrasi. Pertanyaan murid yang terasa mendasar juga tanda mereka butuh jembatan pemahaman dan rasa aman.",
+ k:["Kompetensi profesional dan pedagogik harus seimbang","PCK: memadukan materi dengan analogi, representasi, dan contoh konkret","Tiga pilar pembelajaran mendalam: pemahaman konseptual, berpikir kritis, keterlibatan aktif","Etika profesi: berpihak pada murid, menjaga rasa aman psikologis, refleksi berkelanjutan","Murid yang transisi dari berpikir konkret ke formal butuh jembatan konkret"],
+ u:["Melakukan asesmen awal sebelum masuk materi","Memulai dari benda kerja dan demonstrasi nyata, baru mengenalkan istilah dan rumus","Menjawab setiap pertanyaan dengan sabar dan membuka diskusi dua arah","Menulis catatan refleksi setiap selesai mengajar dan meminta masukan murid serta guru pamong"],
+ art:[["LK 2.A","Pemilihan dan Desain Kasus (Kasus 2: Pak Andi)","Analisis kasus guru SMP yang langsung memakai bahasa ilmiah abstrak dan mengabaikan pertanyaan murid. Disusun berkelompok bersama Ahmad Wildan, Bagas Oktavia Rahmanto, dan Mohamad Ali Sovwan, dosen Prof. Dr. Dwi Agus Sudjimat, S.T., M.Pd."]],
+ w:"Artefak ini merekam proses berpikir kami mengurai akar masalah. Saya menyadari kekeliruan Pak Andi bisa terjadi pada saya, sehingga ini menjadi titik awal perubahan cara pandang saya.",
+ x:"<div><h3>Peta analisis kasus Pak Andi</h3><ul><li>Inti masalah: penguasaan konten belum diubah menjadi penyampaian yang pedagogis (PCK)</li><li>Kompetensi profesional unggul, pedagogik lemah: tanpa asesmen kesiapan dan interaksi dua arah</li><li>Ketiga pilar pembelajaran mendalam belum terwujud</li><li>Etika: pertanyaan murid diabaikan dan tidak ada refleksi diri</li></ul></div>",
+ v:"Memulai dari benda kerja nyata, lalu mengenalkan istilah teknis dan rumus."},
+{n:"Pembelajaran Sosial Emosional",e:"💗",c:"#FF8FAE",tag:"Perilaku adalah sinyal kebutuhan.",
+ a:"Saya dulu mengira tugas utama guru adalah menyampaikan kompetensi teknis. PSE dan School Well-Being menyadarkan saya bahwa murid hanya bisa belajar baik jika kebutuhan emosional dan sosialnya terpenuhi. Kompetensi PSE dekat dengan bengkel: kerja tim butuh relasi, K3 butuh pengelolaan diri, pekerjaan berisiko butuh keputusan yang bertanggung jawab.",
+ b:"Murid yang melamun atau sering terlambat dulu mudah saya anggap kurang motivasi. Kini saya tahu itu sinyal kebutuhan yang belum terpenuhi. Kesejahteraan murid juga tanggung jawab seluruh warga sekolah, bukan hanya guru BK, dan pendampingan harus dirancang agar tidak menstigma.",
+ k:["Lima kompetensi CASEL: kesadaran diri, pengelolaan diri, kesadaran sosial, keterampilan berelasi, pengambilan keputusan bertanggung jawab","School well-being (Konu dan Rimpelä): having, loving, being, health status","Kesejahteraan sebagai prasyarat belajar","Pendekatan seluruh sekolah dan lingkungan bebas perundungan (Permendikbudristek 46 Tahun 2023)","Empati dan komunikasi suportif"],
+ u:["Memulai pelajaran dengan check-in emosi 3–5 menit","Mencatat perubahan perilaku murid, berdialog, dan berkoordinasi dengan wali kelas, guru BK, dan orang tua","Menerapkan diferensiasi yang tidak mencolok: instruksi bertahap, peran kelompok jelas, tutor sebaya","Membangun budaya bengkel yang aman tanpa olok-olok dan senioritas","Menjaga kesejahteraan diri sebagai guru"],
+ art:[["4.B","School Well-Being: Lembar Kerja 4.2 Studi Kasus","Dua kasus: Lingga (melamun, sering izin, dirundung karena pendampingan intensif) dan Almira (murung akibat orang tua bercerai, belajar di depan gerbang). Dosen: Dr. Widiyanti, M.Pd."]],
+ w:"Kedua kasus memaksa saya menerapkan konsep well-being pada kebutuhan murid nyata, dan menunjukkan pergeseran dari menilai murid kurang mampu menjadi mencari akar masalah pada emosi, relasi, dan lingkungan.",
+ x:"<div><h3>Saran saya untuk seluruh pihak sekolah</h3><div class='chips'><div class='chip'><b>Lingga</b>Pendampingan dibuat tidak mencolok (di luar jam kelas atau kelompok kecil), guru BK menggali akar masalah, dan kelas memiliki norma bahwa setiap orang belajar dengan caranya sendiri.</div><div class='chip'><b>Almira</b>Sekolah tetap terasa aman, guru BK hadir menemani tanpa memaksa masuk kelas, ibu diajak berkomunikasi terbuka, psikolog anak dilibatkan, dan teman sekelas menyambut dengan biasa saja.</div></div></div>",
+ v:"Membuka pelajaran dengan check-in emosi dan membangun budaya bengkel yang aman."},
+{n:"Pembelajaran Mendalam dan Asesmen (PMA) Lanjut SMK",e:"🔧",c:"#4BDDA6",tag:"Memulai dari titik berangkat setiap murid.",
+ a:"Murid di kelas praktik datang dengan pengalaman bengkel yang berbeda-beda, jadi saya perlu menguasai cara memetakan kemampuan awal, menyusun tugas bertingkat, dan menilai proses maupun hasil kerja. Kasus Pak Sapto di tugas 4.C mirip dengan situasi di kelas praktik yang saya hadapi. Tantangannya: waktu praktik terbatas, sementara asesmen yang rinci menuntut instrumen dan rubrik lebih banyak.",
+ b:"Dulu saya langsung menyampaikan materi dan memberi tugas yang sama kepada seluruh kelas, memakai istilah baku dan menganggap istilah bengkel atau daerah sebagai kekeliruan, serta menekankan hasil jadi benda kerja. Kini saya memetakan level murid, memakai istilah lokal sebagai jembatan, dan menilai kerja sama, komunikasi, kerapian, serta kepatuhan SOP dengan rubrik yang eksplisit.",
+ k:["Pembelajaran mendalam: berkesadaran, bermakna, menggembirakan, sehingga murid paham alasan di balik prosedur","TaRL: level dasar, menengah, dan mahir, ditinjau ulang secara berkala","CRT: latar budaya, bahasa, dan pengalaman murid diakui sebagai modal belajar","Model kontekstual SMK: TeFa, PjBL, Kelas Wirausaha, Kelas Industri, PKL","Asesmen autentik: awal, formatif, dan sumatif dengan rubrik teknis dan non-teknis"],
+ u:["Memulai tiap kompetensi dasar dengan tes praktik singkat dan diskusi pengalaman, lalu mencatat hasilnya pada skala capaian","Membentuk tim campuran dengan peran sesuai level dan meninjau level secara berkala","Menyusun daftar istilah lokal-teknis bersama murid","Membagikan rubrik non-teknis sejak awal proyek dan melibatkan penilai kedua bila memungkinkan"],
+ art:[["4.C","Diskusi Pemecahan Kasus: Strategi TaRL dan CRT","Laporan diskusi kelompok tentang kasus Pak Sapto (proyek perawatan motor injeksi) yang menerapkan TaRL, CRT, dan model kontekstual PjBL. Dosen: Ir. Marsono, S.Pd.T., M.Pd., Ph.D."]],
+ w:"Seluruh konsep refleksi saya (TaRL, CRT, model kontekstual, tiga jenis asesmen) dibahas dalam satu dokumen. Jawaban 1 dan 2 mendukung pemetaan level dan urutan asesmen, jawaban 3 tentang istilah lokal, jawaban 4 berisi rencana PjBL, dan Tabel 4.3 memuat alternatif strategi seperti rubrik non-teknis dan kamus istilah lokal-teknis.",
+ x:"<div><h3>Tiga gagasan utama</h3><div class='chips'><div class='chip'><b>TaRL</b>Tes praktik, diskusi, dan observasi memetakan murid ke level dasar, menengah, dan mahir. Murid mahir ikut membimbing temannya.</div><div class='chip'><b>CRT</b>Istilah komponen dari rumah atau jalanan menjadi jembatan ke istilah teknis resmi, dan pengalaman di bengkel keluarga diakui sebagai modal belajar.</div><div class='chip'><b>Asesmen</b>Awal untuk memetakan, formatif lewat observasi harian dan refleksi, sumatif lewat uji praktik sesuai SOP termasuk kerja tim dan komunikasi.</div></div></div>",
+ v:"Memulai tiap kompetensi dengan asesmen awal, lalu menyusun kamus istilah lokal-teknis bersama murid."}
+];
+var D=S1,sem=0;
+var T=[["a","Kaitannya dengan peran saya"],["b","Beda dari praktik saya selama ini"]];
+var cur=0,tab="r",reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function $(i){return document.getElementById(i)}
+function ul(a){return "<ul>"+a.map(function(s){return "<li>"+s+"</li>"}).join("")+"</ul>"}
+function tiles(){
+  $("tiles").innerHTML=D.map(function(d,i){return "<button class='tile' style='--c:"+d.c+";--i:"+i+"' data-i='"+i+"' aria-pressed='"+(i==cur)+"'><span class='em' aria-hidden='true'>"+d.e+"</span><b>"+d.n+"</b><small>"+d.tag+"</small></button>"}).join("");
+}
+function panel(){
+  var d=D[cur],h="";
+  if(tab=="r"&&d.nr){h="<p class='note'>"+d.nr+"</p>"}else if(tab=="r"){
+    h="<div class='g2'>"+T.map(function(t){return "<div><h3>"+t[1]+"</h3><p>"+d[t[0]]+"</p></div>"}).join("")+"</div><div class='g2'><div><h3>Konsep yang saya bawa</h3>"+ul(d.k)+"</div><div><h3>Yang akan saya ubah</h3>"+ul(d.u)+"</div></div>";
+  }else{
+    h=d.art.map(function(a){return "<div class='art'><p><span class='k'>"+a[0]+"</span><b>"+a[1]+"</b></p><p>"+a[2]+"</p></div>"}).join("")+"<div class='why'><h3>Mengapa artefak ini mendukung refleksi saya</h3><p>"+d.w+"</p></div>"+d.x;
+  }
+  $("panel").style.setProperty("--c",d.c);
+  $("panel").innerHTML="<div class='ph'><h2>"+d.e+" "+d.n+"</h2><p>"+d.tag+"</p></div><div class='tabs' role='tablist'><button role='tab' data-t='r' aria-selected='"+(tab=="r")+"'>Refleksi</button><button role='tab' data-t='a' aria-selected='"+(tab=="a")+"'>Artefak bukti</button></div><div class='pb'>"+h+"</div>";
+}
+$("tiles").addEventListener("click",function(e){
+  var b=e.target.closest(".tile");if(!b)return;
+  cur=+b.dataset.i;tab=D[cur].nr?"a":"r";tiles();panel();
+  $("detail").scrollIntoView({behavior:reduce?"auto":"smooth"});
+});
+$("panel").addEventListener("click",function(e){
+  var b=e.target.closest("[data-t]");if(!b)return;
+  tab=b.dataset.t;panel();
+});
+tiles();panel();
+
+var G=[
+["“Saya tidak mungkin mengubah metode karena metode yang ada sekarang sudah bagus.”","CBT","Menolak kemungkinan baru, sehingga otak tidak ditantang untuk kreatif."],
+["“Saya ingin mencari tahu mengapa murid saya pasif.”","OBT","Rasa ingin tahu membuka jalan menuju solusi."],
+["“Proyek ini terlalu rumit untuk sekolah saya.”","CBT","Proyek ditolak karena dianggap tidak realistis."],
+["“Masukan kepala sekolah bisa saya pakai untuk memperbaiki program.”","OBT","Kritik dipakai untuk mengevaluasi kekurangan program."],
+["“Kelas daring membuat saya bingung, karena saya tidak tahu apakah murid saya benar-benar belajar.”","CBT","Model belajar baru dilihat sebagai hambatan."],
+["“Saya bisa belajar teknologi baru agar kelas daring tetap hidup.”","OBT","Tantangan dijawab dengan mencoba hal baru."]
+];
+var gi=0,gs=0;
+function game(){
+  var c=$("gcard");
+  if(gi>=G.length){
+    var m=gs==G.length?"Sempurna! Kamu sudah jago melihat peluang.":gs>=4?"Bagus! Tinggal diasah sedikit lagi.":"Tidak apa-apa. Pola pikir memang bisa dilatih.";
+    c.innerHTML="<p class='s'>Skor kamu "+gs+" dari "+G.length+". "+m+"</p><button class='nx' id='again'>Main lagi</button>";
+    return;
+  }
+  c.innerHTML="<p class='s'>Soal "+(gi+1)+" dari "+G.length+"</p><p class='s'>"+G[gi][0]+"</p><div class='opts'><button class='opt' data-a='CBT'>CBT: melihat hambatan</button><button class='opt' data-a='OBT'>OBT: melihat peluang</button></div><p class='fb' id='fb' aria-live='polite'></p>";
+}
+$("gcard").addEventListener("click",function(e){
+  if(e.target.id=="again"){gi=0;gs=0;game();return}
+  if(e.target.id=="nx"){gi++;game();return}
+  var b=e.target.closest(".opt");if(!b||b.disabled)return;
+  var ok=b.dataset.a==G[gi][1];if(ok)gs++;
+  this.querySelectorAll(".opt").forEach(function(o){o.disabled=true;if(o.dataset.a==G[gi][1])o.classList.add("ok")});
+  if(!ok)b.classList.add("no");
+  $("fb").innerHTML="<b>"+(ok?"Tepat!":"Belum tepat.")+"</b> Ini "+G[gi][1]+". "+G[gi][2]+"<br><button class='nx' id='nx'>"+(gi==G.length-1?"Lihat skor":"Soal berikutnya")+"</button>";
+});
+game();
+
+function vow(){$("vow").innerHTML=D.filter(function(d){return d.v}).map(function(d,i){return "<li><label><input type='checkbox' data-v='"+i+"'><span><b>"+d.e+" "+d.n+"</b>"+d.v+"</span></label></li>"}).join("");
+}function cnt(){var n=document.querySelectorAll("#vow input:checked").length,t=$("vow").children.length;$("cnt").textContent=n==0?"Belum ada yang dicentang.":n==t?"Semua janji sudah mulai dijalankan!":n+" dari "+t+" janji sudah mulai dijalankan."}
+$("vow").addEventListener("change",cnt);vow();cnt();
+var M=[["😄","Semangat","Saya manfaatkan energinya: beri peran memimpin demonstrasi atau menjadi tutor sebaya."],["🙂","Baik","Praktik berjalan seperti biasa, dan tetap saya sapa satu per satu."],["😐","Biasa saja","Saya amati pelan-pelan dan libatkan dengan tugas yang jelas, siapa tahu ia butuh dorongan kecil."],["😟","Cemas","Saya validasi perasaannya, beri tugas bertahap, dan tawarkan ngobrol sebentar setelah kelas."],["😢","Sedih","Saya beri ruang aman tanpa memaksa, lalu berkoordinasi dengan wali kelas dan guru BK."]];
+$("moods").innerHTML=M.map(function(m,i){return "<button class='mood' data-i='"+i+"' aria-pressed='false'>"+m[0]+"<small>"+m[1]+"</small></button>"}).join("");
+$("moods").addEventListener("click",function(e){var b=e.target.closest(".mood");if(!b)return;this.querySelectorAll(".mood").forEach(function(x){x.setAttribute("aria-pressed",x==b)});var m=M[+b.dataset.i];$("mfb").innerHTML="<b>"+m[1]+".</b> "+m[2]});
+$("sem").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;sem=+b.dataset.s;D=sem?S2:S1;cur=0;tab=D[0].nr?"a":"r";this.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",x==b)});tiles();panel();vow();cnt();$("game").hidden=!!sem;$("mood").hidden=!sem});
+</script>
+</body>
+</html>
